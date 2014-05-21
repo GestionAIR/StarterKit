@@ -14,7 +14,7 @@
 	background: -o-linear-gradient(top,  @color-start @start,@color-end @end); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  @color-start @start,@color-end @end); /* IE10+ */
 	background: linear-gradient(to bottom,  @color-start @start,@color-end @end); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{color-start}', endColorstr='@{color-end}',GradientType=0 ); /* IE6-9 */
 }
 
 .sprite-sheet(@file,@x,@y) {
