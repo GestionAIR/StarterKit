@@ -1,0 +1,53 @@
+// Header
+// --------------------------
+
+header {
+	.skip-nav {
+		background: @brand-primary;
+		min-height: 3px;
+		ul {
+			.container;
+			list-style: none;
+			margin-bottom: 0;
+			> li {
+				float: left;
+				padding-right: 15px;
+				> a {
+					color: #fff;
+					font-size: 11px;
+					display: none;
+					&:focus,
+					&:hover {
+						color: @gray-lighter;
+					}
+				}
+			}
+		}
+	}
+	.navbar {
+		border: 0;
+		.navbar-brand {
+			//padding-top:0;
+			//padding-bottom:0;
+		}
+		.navbar-nav {
+			li {
+				a {
+					padding-left: 0;
+					padding-right: 0;
+					&:before {
+						content:"|";
+						padding-left: 10px;
+						padding-right: 10px;
+						color: @gray-light;
+						font-weight: 400;
+					}
+				}
+				&:first-child a:before {
+					content:"";
+				}
+			}
+
+		}
+	}
+}

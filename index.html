@@ -26,19 +26,72 @@
 
 </head>
 <body>
-
+	
 	<header>
-		<h1 class="text-center">
-			<span class="glyphicon glyphicon-send"></span><br>
-			Hello World ! 
-		</h1>
+		<div class="skip-nav">
+			<ul>
+				<li><a href="#navigation">Aller au menu</a></li>
+				<li><a href="#content" accesskey="s">Aller au contenu</a></li>
+				<li><a href="#search" accesskey="4">Aller à la recherche</a></li>
+			</ul>
+		</div>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="fa fa-bars"></span>
+					</button>
+					<a class="navbar-brand" href="#"><i class="fa fa-code"></i> Starter Kit</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="nav navbar-nav">
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Link</a></li>
+						<li class="active"><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</header>
 
 	<section>
-		<article></article>
+		<article>
+			
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+
+			<p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+
+			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+			<button type="button" class="btn btn-default">Default</button>
+			<button type="button" class="btn btn-primary">Primary</button>
+			<button type="button" class="btn btn-success">Success</button>
+			<button type="button" class="btn btn-warning">Warning</button>
+
+		</article>
 	</section>
 
 	<footer></footer>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="assets/bootstrap-3.1.1/dist/js/bootstrap.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	  var $buoop = {vs:{i:8,f:20,o:17,s:6},reminder:0};
+	  $buoop.ol = window.onload;
+	  window.onload=function(){
+		try {if ($buoop.ol) $buoop.ol();}catch (e) {}
+		var e = document.createElement("script");
+		e.setAttribute("type", "text/javascript");
+		e.setAttribute("src", "//browser-update.org/update.js");
+		document.body.appendChild(e);
+	  }
+	</script>
 
 </body>
 </html>

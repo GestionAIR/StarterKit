@@ -1,17 +1,64 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+// Imports
+// -------------------------
 
-@import "../assets/bootstrap-3.1.1/less/bootstrap.less";
+// Imports Assets
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900);
+@import "../assets/bootstrap-3.2.0/less/bootstrap.less";
+@import "../assets/font-awesome-4.1.0/less/font-awesome.less";
 
 // Import Utilities
 @import "reset";
 @import "mixins";
 @import "social-colors";
 
-// Typography
+// Import Components
+@import "header";
+@import "footer";
+
+// Import Starter Kit
+@import "starter-kit";
+
+// Variables
 // -------------------------
-@font-family-sans-serif:  "Lato", Helvetica, Arial, sans-serif;
+
+// Typography
+@font-family-sans-serif:  "Open Sans", Helvetica, Arial, sans-serif;
 
 // Iconography
+@fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts";
+
+// Colors
+@blue: #5ea5ab;
+@brand-primary: @blue;
+
+@text-color: #333;
+@body-bg: #fff;
+
+// Grid & Container
+@container-lg: @container-md;
+//@grid-gutter-width: 30px;
+
+// Navbar
+@navbar-height: 50px;
+@navbar-margin-bottom: 0;
+@navbar-border-radius: 0;
+@navbar-default-color: @text-color;
+//@navbar-default-bg: #fff;
+@navbar-default-link-color: @text-color;
+@navbar-default-link-hover-color: @brand-primary;
+@navbar-default-link-hover-bg: transparent;
+@navbar-default-link-active-color: @brand-primary;
+@navbar-default-link-active-bg: transparent;
+@navbar-padding-horizontal: 0;
+//@navbar-default-toggle-hover-bg: #ddd;
+//@navbar-default-toggle-icon-bar-bg: #888;
+//@navbar-default-toggle-border-color: #ddd;
+
+
+// Styles
 // -------------------------
-@icon-font-path:          "assets/bootstrap-3.1.1/fonts/";
-@icon-font-name:          "glyphicons-halflings-regular";
+
+// Default Transition
+a {
+	.transition(color);
+}
