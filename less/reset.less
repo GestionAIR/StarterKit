@@ -18,3 +18,48 @@ input[type="radio"]:focus,
 input[type="checkbox"]:focus {
 	outline:none;
 }
+
+// Patch Bootstrap's Mixins
+// -------------------------
+
+// Container with gutter as a parameter
+.container-fixed(@gutter: @grid-gutter-width) {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+  &:extend(.clearfix all);
+}
+.container(@gutter: @grid-gutter-width) {
+  .container-fixed(@gutter);
+
+  @media (min-width: @screen-sm-min) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md-min) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
+}
+
+// Add support of gutter as a parameter on each breakpoint
+.make-sm-column(@columns; @gutter: @grid-gutter-width) {
+  @media (min-width: @screen-sm-min) {
+    padding-left:  (@gutter / 2);
+    padding-right: (@gutter / 2);
+  }
+}
+.make-md-column(@columns; @gutter: @grid-gutter-width) {
+  @media (min-width: @screen-md-min) {
+    padding-left:  (@gutter / 2);
+    padding-right: (@gutter / 2);
+  }
+}
+.make-lg-column(@columns; @gutter: @grid-gutter-width) {
+  @media (min-width: @screen-lg-min) {
+    padding-left:  (@gutter / 2);
+    padding-right: (@gutter / 2);
+  }
+}
