@@ -1,7 +1,7 @@
 Starter Kit
 ===========
 
-A starter kit for front developpement with bootstrap, less and grunt.
+A starter kit for front developpement with bootstrap, less.
 
 Save time setting your tools before coding !
 
@@ -9,14 +9,10 @@ Save time setting your tools before coding !
 
 - **Bootstrap**
 - **Less**
+- **Font Awesome**
+- **Respond.JS**
+- **html5shiv**
 - **Grunt** (soon)
-
-## How to install dev tools
-
-- install Node.js (http://nodejs.org/)
-- install grunt-cli globally: `npm i -g grunt-cli`
-- install dev dependencies: `npm i`
-- use `grunt` to check your code!
 
 ## License
 
