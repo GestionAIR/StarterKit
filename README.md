@@ -27,6 +27,7 @@ From the project's directory execute :
 ```
 $ npm -g install grunt-cli
 $ npm install
+$ bower install
 ```
 
 Run project with Grunt.
