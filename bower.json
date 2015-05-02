@@ -1,0 +1,22 @@
+{
+  "name": "StarterKit",
+  "version": "1.0",
+  "authors": [
+    "Mathieu <mathieu.legac@escaledigitale.com>"
+  ],
+  "description": "A starter kit for front developpement with bootstrap",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "font-awesome": "~4.3.0",
+    "html5shiv": "~3.7.2",
+    "respond": "~1.4.2"
+  }
+}

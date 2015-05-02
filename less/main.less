@@ -1,12 +1,12 @@
 // Imports
 // -------------------------
 
-@ga_path: "..";
+@ga_path: "vendor";
 
 // Imports Assets
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900);
-@import "@{ga_path}/assets/bootstrap-3.2.0/less/bootstrap.less";
-@import "@{ga_path}/assets/font-awesome-4.2.0/less/font-awesome.less";
+@import "@{ga_path}/bootstrap/less/bootstrap.less";
+@import "@{ga_path}/font-awesome/less/font-awesome.less";
 
 // Import Utilities
 @import "reset";
@@ -25,7 +25,7 @@
 @font-family-sans-serif:  "Open Sans", Helvetica, Arial, sans-serif;
 
 // Iconography
-@fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts";
+@fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 
 // Colors
 @blue: #5ea5ab;
@@ -61,4 +61,8 @@
 // Default Transition
 a {
 	.transition(color);
+}
+
+section {
+	.container-fixed();
 }
