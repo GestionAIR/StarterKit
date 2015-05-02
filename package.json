@@ -1,9 +1,17 @@
 {
   "name": "starterkit",
-  "description": "",
+  "version":"1.1.0",
+  "description": "A starter kit for front developpement with bootstrap",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:GestionAIR/StarterKit.git"
+  },
   "license": "MIT",
   "dependencies": {
     "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-jshint": "^0.11.0",
     "grunt-contrib-less": "^1.0.0",
     "grunt-contrib-uglify": "^0.7.0",
